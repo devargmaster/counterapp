@@ -1,21 +1,13 @@
 import React from "react";
-// import { StrictMode } from 'react'
- import { createRoot } from 'react-dom/client'
+ import ReactDOM from 'react-dom/client'
  import './index.css'
-// import App from './App.jsx'
+import {App} from './HelloWorld.jsx';
+import {FirstApp} from "./FirstApp.jsx";
 
-// eslint-disable-next-line react-refresh/only-export-components
-function App() {
-    return (<h1>Hola Mundo</h1>);
-}
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//     <App />
-//   </StrictMode>,
-// )
-createRoot(document.getElementById('root')).render(
+
+ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <App />
+        <FirstApp/>
     </React.StrictMode>
 
 )
