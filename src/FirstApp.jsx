@@ -1,3 +1,4 @@
+import {HelloWorld} from "./HelloWorld.jsx";
 
 const GetMessage = () => {
     return JSON.stringify(newMessage);
@@ -11,7 +12,7 @@ export const FirstApp = () => {
     return (
        <>
            <code>{ GetMessage() }</code>
-           <p> soy un texto </p>
+           <p> <HelloWorld/></p>
        </>
     );
 }
